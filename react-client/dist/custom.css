@@ -102,12 +102,13 @@ input[type="search"].form-style::-webkit-input-placeholder {
 }
 
 .form-control{
-    border: 0px !important;
+    border: 0px;
 }
 
 .text-style {
     margin-left : 5px;
     font-size : 14px;
+    vertical-align: super;
 }
 
 .btn-group{
@@ -116,17 +117,20 @@ input[type="search"].form-style::-webkit-input-placeholder {
     margin-left : 30px;
     height: 46px;
 }
+.btn-register, .btn-login {
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
 
 .btn-register{
     border-right: 2px solid rgb(184, 184, 184);
-    font-size : 12px !important;
     color: #737271;
 }
 
 .btn-login{
     border-left: 1px solid rgb(184, 184, 184);
     color: #ef8601;
-    font-size : 12px !important;
 }
 
 /* login */
@@ -268,7 +272,6 @@ input[type="search"].form-style::-webkit-input-placeholder {
     background-color: #fff;
     width: auto;
     height: 600px;
-    margin-top: 70px;
     border-radius: 5px;
 }
 
