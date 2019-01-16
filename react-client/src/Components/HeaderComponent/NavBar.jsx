@@ -36,8 +36,8 @@ class NavBar extends Component {
               <a className="nav-item nav-link" href="#"><i className="fa fa-shopping-cart fa-2x" aria-hidden="true" /></a>
             </div>
             <div className="btn-group" role="group" aria-label="Basic example">
-              <button type="button" className="btn btn-register text-center">REGISTER</button>
-              <button type="button" className="btn btn-login text-center">LOGIN</button>
+              <Link to="register" className="btn btn-register text-center">REGISTER</Link>
+              <Link to="login" className="btn btn-login text-center">LOGIN</Link>
             </div>
           </div>
         </div>
