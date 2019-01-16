@@ -1,0 +1,40 @@
+{
+  "name": "horekaromulus",
+  "version": "1.0.0",
+  "description": "horekaromulus marketplace",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "start": "node ./server/index.js",
+    "build": "webpack -p",
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasadigitalcreativemarketing/horekaromulus.git"
+  },
+  "author": "amri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasadigitalcreativemarketing/horekaromulus/issues"
+  },
+  "homepage": "https://github.com/jasadigitalcreativemarketing/horekaromulus#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
