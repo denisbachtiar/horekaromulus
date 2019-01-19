@@ -179,7 +179,7 @@ body{
 
 .input-style{
     width: 400px;
-    border: 2px solid rgb(184, 184, 184);
+    border: 1px solid rgb(184, 184, 184);
     border-radius: 5px;
     height: 46px;
 }
@@ -206,7 +206,7 @@ input[type="search"].form-style::-webkit-input-placeholder {
 }
 
 .form-control{
-    border: 0px;
+    font-size: 0.8rem;
 }
 
 .text-style {
@@ -216,7 +216,7 @@ input[type="search"].form-style::-webkit-input-placeholder {
 }
 
 .btn-group{
-    border: 2px solid #48c6d0 !important;
+    border: 1px solid #48c6d0 !important;
     border-radius: 5px;
     margin-left : 30px;
     height: 46px;
@@ -228,7 +228,7 @@ input[type="search"].form-style::-webkit-input-placeholder {
 }
 
 .btn-register{
-    border-right: 2px solid rgb(184, 184, 184);
+    border-right: 1px solid rgb(184, 184, 184);
     color: #737271;
 }
 
@@ -322,6 +322,7 @@ input[type="search"].form-style::-webkit-input-placeholder {
 .form-style{
     color: #858483;
     font-size: 14px;
+    border: 0;
 }
 
 .form-style2{
@@ -360,7 +361,7 @@ input[type="search"].form-style::-webkit-input-placeholder {
 /* Jumbotron */
 
 .jumbotron{
-    background-image: url('../img/bg.jpg');
+    background-image: url('./asset/img/bg.jpg');
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -390,8 +391,8 @@ input[type="search"].form-style::-webkit-input-placeholder {
 }
 
 .btn-dropdown{
-    font-size : 16px !important;
-    color: rgb(184, 184, 184);
+    font-size: 0.8rem;
+    color: #b1b1b1;
     border-radius: 0px;
     border-top: solid 1px #f3f3f3;
     border-bottom: solid 1px #f3f3f3;
@@ -424,17 +425,16 @@ input[type="search"].form-style::-webkit-input-placeholder {
 
 #request-box{
     width: auto;
-    height: 300px;
-    top: 0em;
-    bottom: 0em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .white-box-2{
     position: relative;
-    top:50px;
+    /* top:50px; */
     background-color: #fff;
     width: auto;
-    height: 200px;
+    /* height: 200px; */
     border-radius: 5px;
 }
 
@@ -476,7 +476,6 @@ input[type="search"].request-form-style::-webkit-input-placeholder {
 
 #popular-tab{
     width: auto;
-    height: 90px;
     top: 0em;
     bottom: 0em;
 }
@@ -484,6 +483,7 @@ input[type="search"].request-form-style::-webkit-input-placeholder {
 .btn-popular{
     color: #737271;
     border: 1px solid #ebebeb;
+    font-size: 0.8rem;
 }
 
 .btn-popular:hover{
@@ -494,9 +494,8 @@ input[type="search"].request-form-style::-webkit-input-placeholder {
 
 #popular-item{
     width: auto;
-    height: 350px;
-    top: 0em;
-    bottom: 0em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .card-box{
@@ -538,9 +537,8 @@ input[type="search"].request-form-style::-webkit-input-placeholder {
 
 #recomended-item{
     width: auto;
-    height: 825px;
-    top: 0em;
-    bottom: 0em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .btn-buy{
@@ -560,9 +558,8 @@ input[type="search"].request-form-style::-webkit-input-placeholder {
 
 #partner-box{
     width: auto;
-    height: 300px;
-    top: 0em;
-    bottom: 0em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .img-box{
@@ -644,4 +641,61 @@ input[type="email"].subscribe-box::-webkit-input-placeholder {
     color: rgb(184, 184, 184);
     font-size: 12px;
     margin-top : 10px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    width: 25px;
+    height: 35px;
+    position: absolute;
+    top: 40%;
+    margin-left: -15px;
+    display: block !important;
+    border: 0px solid #ef8601;
+    background-color: #ef8601;
+    color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    width: 25px;
+    height: 35px;
+    position: absolute;
+    top: 40%;
+    right: -20px;
+    display: block !important;
+    border: 0px solid #ef8601;
+    background-color: #ef8601;
+    color: #fff;
+}
+#quotation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#quotation img.img-thumb {
+    max-width: 90px;
+}
+.startform,
+.title-product {
+    color: #ef8601;
+    font-weight: 600;
+}
+.head-table {
+    background-color: #fff;
+    padding: 10px 0;
+}
+.table-action {
+    padding-top: 25px;
+    font-size: 0.8rem;
+}
+.title-product {
+    padding: 8px;
+}
+.special-note {
+    max-width: 200px;
+}
+.box-form {
+    background: #fff;
+    padding: 30px;
+}
+
+form.form-quotation {
+    width: 400px;
 }

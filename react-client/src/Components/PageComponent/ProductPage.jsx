@@ -13,9 +13,8 @@ class ProductPage extends Component {
                 <div className="col-md-12 content product mb-4">
                   <div className="row">
                     <div className="col-md-6">
-                      <div class="owl-carousel owl-theme">
+                      <div class="owl-carousel owl-theme single-product">
                           <div class="item"><img className="img-responsive" src="./asset/img/indomie.png" alt="Card image cap" /></div>
-            
                       </div>
                     </div>
                     <div className="col-md-6">

@@ -8,7 +8,7 @@ select:active,
 select:focus,
 .form-control:active,
 .form-control:focus {
-  border-color: transparent;
+  border-color: #ebebeb;
   box-shadow: none;
 }
 .navbar-nav .fa {

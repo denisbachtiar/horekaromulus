@@ -20,7 +20,7 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i className="fa fa-list-alt"></i> Beauty & Fashion
+                  <i className="fa fa-list-alt"></i> Agriculture & Food
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Cosmetic</a>
@@ -30,7 +30,7 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
+                  <i className="fa fa-list-alt"></i> Automotive
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Action</a>
@@ -42,7 +42,7 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
+                  <i className="fa fa-list-alt"></i> Beauty & Fashion
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Action</a>
@@ -54,7 +54,7 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
+                  <i className="fa fa-list-alt"></i> Computer
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Action</a>
@@ -66,7 +66,7 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
+                  <i className="fa fa-list-alt"></i> Electronics
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Action</a>
@@ -78,7 +78,43 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
+                  <i className="fa fa-list-alt"></i> Furnitures
+                  </button>
+                  <div className="dropdown-menu">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                    <div className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <div className="dropright">
+                  <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i className="fa fa-list-alt"></i> Healths
+                  </button>
+                  <div className="dropdown-menu">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                    <div className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <div className="dropright">
+                  <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i className="fa fa-list-alt"></i> Horeca
+                  </button>
+                  <div className="dropdown-menu">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                    <div className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <div className="dropright">
+                  <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i className="fa fa-list-alt"></i> Offices
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Action</a>
@@ -118,14 +154,14 @@ class HomePage extends Component {
         {/* End Jumbostron */}
         {/* Start Request Box */}
         <section className="bg-light" id="request-box">
-          <div className="container-fluid pl-5 pr-5">
+          <div className="container pl-5 pr-5">
             <div className="row no-gutters white-box-2">
               <div className="col-6"> 
                 <img src="./asset/img/request-img.jpeg" className="img-fluid request-image" alt="Responsive image" />
               </div>
               <div className="col-6">
                 <div className="container mt-5">
-                  <h2 className="text-second"><strong>One Request, Multiple qoutes</strong></h2>
+                  <h2 className="text-second">One Request, Multiple qoutes</h2>
                   <div className="row">
                     <div className="col-6">
                       <div className="form-group request-input-style">
@@ -145,9 +181,9 @@ class HomePage extends Component {
         {/* Start Popular Tabs */}
         <section className="bg-light" id="popular-tab">
           <div className="container pl-5 pr-5">
-            <div className="row no-gutters ">
-              <div className="col mr-5">
-                <h2>Popular</h2>
+            <div className="row">
+              <div className="col">
+                <h4>Popular</h4>
               </div>
               <div className="col">
                 <button type="submit" className="btn btn-popular">FOOD</button>
@@ -179,117 +215,202 @@ class HomePage extends Component {
         {/* End Popular Tabs */}
         {/* Start Popular Items */}
         <section className="bg-light" id="popular-item">
-          <div className="container-fluid pt-2 pl-5 pr-5">
-            <div className="row no-gutters card-deck">
-              <div className="col">
-                <div className="card card-box">
-                  <div className="card-body">
-                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                    <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
-                    <p className="card-text text-center card-price">Rp 2.300</p>
-                    <div className="text-center card-rating">
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star" />
-                      <span className="fa fa-star" />
+          <div className="container pt-2 pl-5 pr-5">
+            <div class="owl-carousel owl-theme popular-product">
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                     </div>
-                    <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                   </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="card card-box">
-                  <div className="card-body">
-                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                    <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
-                    <p className="card-text text-center card-price">Rp 2.300</p>
-                    <div className="text-center card-rating">
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star" />
-                      <span className="fa fa-star" />
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                     </div>
-                    <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                   </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="card card-box">
-                  <div className="card-body">
-                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                    <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
-                    <p className="card-text text-center card-price">Rp 2.300</p>
-                    <div className="text-center card-rating">
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star" />
-                      <span className="fa fa-star" />
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                     </div>
-                    <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                   </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="card card-box">
-                  <div className="card-body">
-                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                    <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
-                    <p className="card-text text-center card-price">Rp 2.300</p>
-                    <div className="text-center card-rating">
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star" />
-                      <span className="fa fa-star" />
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                     </div>
-                    <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                   </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="card card-box">
-                  <div className="card-body">
-                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                    <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
-                    <p className="card-text text-center card-price">Rp 2.300</p>
-                    <div className="text-center card-rating">
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star" />
-                      <span className="fa fa-star" />
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                     </div>
-                    <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                   </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="card card-box">
-                  <div className="card-body">
-                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                    <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
-                    <p className="card-text text-center card-price">Rp 2.300</p>
-                    <div className="text-center card-rating">
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star checked" />
-                      <span className="fa fa-star" />
-                      <span className="fa fa-star" />
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                     </div>
-                    <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
                   </div>
                 </div>
-              </div>
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div className="card card-box">
+                    <div className="card-body">
+                      <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                      <h6 className="card-subtitle text-center card-text-style">Indomie Rasa Soto</h6>
+                      <p className="card-text text-center card-price">Rp 2.300</p>
+                      <div className="text-center card-rating">
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
+                      </div>
+                      <p className="card-text text-center card-shop-name">Abc 1234 Shop</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </section>
         {/* End Popular Items */}
         {/* Start Recomended */}
         <section className="bg-light" id="recomended">
-          <div className="container-fluid pt-2 pb-2 pl-5 pr-5">
+          <div className="container pt-2 pb-2 pl-5 pr-5">
             <div className="row no-gutters ">
               <div className="col">
                 <h2>Recommended For You</h2>
@@ -300,7 +421,7 @@ class HomePage extends Component {
         {/* End Recomended */}
         {/* Start Recomended Item */}
         <section className="bg-light" id="recomended-item">
-          <div className="container-fluid pt-2 pl-5 pr-5">
+          <div className="container pt-2 pl-5 pr-5">
             <div className="row no-gutters card-deck">
               <div className="col">
                 <div className="card card-box">
@@ -430,7 +551,7 @@ class HomePage extends Component {
         {/* End Recomended Items */}
         {/* Start Recomended */}
         <section className="bg-light" id="partner">
-          <div className="container-fluid pt-2 pb-2 pl-5 pr-5">
+          <div className="container pt-2 pb-2 pl-5 pr-5">
             <div className="row no-gutters ">
               <div className="col">
                 <h2>Our Partner</h2>
@@ -441,7 +562,7 @@ class HomePage extends Component {
         {/* End Recomended */}
         {/* Start Partners */}
         <section className="bg-light" id="partner-box">
-          <div className="container-fluid pt-2 pb-2 pl-5 pr-5">
+          <div className="container pt-2 pb-2 pl-5 pr-5">
             <div className="row no-gutters d-flex justify-content-center">
               <img src="./asset/img/samsung.png" alt="samsung" className="img-box" />
               <img src="./asset/img/samsung.png" alt="samsung" className="img-box" />
