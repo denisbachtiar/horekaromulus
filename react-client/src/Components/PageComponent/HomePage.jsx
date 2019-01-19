@@ -20,14 +20,12 @@ class HomePage extends Component {
                 </div>
                 <div className="dropright">
                   <button type="button" className="btn btn-dropdown text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
+                  <i className="fa fa-list-alt"></i> Beauty & Fashion
                   </button>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
-                    <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">Separated link</a>
+                    <a className="dropdown-item" href="#">Cosmetic</a>
+                    <a className="dropdown-item" href="#">Fashion</a>
+                    <a className="dropdown-item" href="#">Jewelry</a>
                   </div>
                 </div>
                 <div className="dropright">
@@ -146,33 +144,33 @@ class HomePage extends Component {
         {/* End Request Box */}
         {/* Start Popular Tabs */}
         <section className="bg-light" id="popular-tab">
-          <div className="container-fluid pl-5 pr-5">
+          <div className="container pl-5 pr-5">
             <div className="row no-gutters ">
-              <div className="col pr-5 mr-5">
+              <div className="col mr-5">
                 <h2>Popular</h2>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">FOOD</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">SPICE</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">KITCHEN SET</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">FURNITURE</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">ELECTRONIC</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">HEALTH</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">CLENING</button>
               </div>
-              <div className="col d-flex justify-content-around">
+              <div className="col">
                 <button type="submit" className="btn btn-popular">SANITORY</button>
               </div>
             </div>

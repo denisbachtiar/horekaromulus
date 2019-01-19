@@ -9,7 +9,7 @@ class NotFound extends Component {
             <div className="container">
                 <div className="row">
                     <SideBar />
-                        <div className="col-md-8 content not-found">
+                        <div className="col-md-10 content not-found">
                                 <div className="notice">
                                     <h3>The item you are looking for is not found</h3>
                                     <p>If you want to add the item you are looking foor to the category, please input it manually</p>

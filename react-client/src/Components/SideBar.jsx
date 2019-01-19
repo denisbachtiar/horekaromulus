@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 class NavBar extends Component {
   render() {
     return (
-        <aside className="col-md-3 sidebar">
+        <aside className="col-md-2 sidebar">
             <div class="form-group">
                 <label for="category">Category</label>
 
