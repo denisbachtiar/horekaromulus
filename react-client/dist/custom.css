@@ -3,6 +3,7 @@
 /* main */
 
 body{
+    color: #686868;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -76,13 +77,40 @@ body{
 .text-search-info {
     padding: 0 10px;
 }
+.sidebar .input-group-text {
+    font-size: 0.8rem;
+    background: none;
+    border-right: none;
+}
+.custom-select:focus,
+.input-group-text:focus {
+    border:1px solid #ced4da;
+    border-color: transparent;
+    box-shadow: none;
+}
 .btn-main {
     background-color: #48c6d0;
     border-color: #48c6d0;
+    color: #fff;
 }
-.btn-success:hover {
+.btn-main:hover,
+.btn-main:active,
+.btn-main:focus,
+ {
     background-color: #48c6d0;
     border-color: #48c6d0;   
+}
+.btn-secondary {
+    background-color: #ef8601;
+    border-color: #ef8601;
+    color: #fff;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+ {
+    background-color: #ef8601;
+    border-color: #ef8601;   
 }
 .bg-main
 {

@@ -6,13 +6,62 @@ class NavBar extends Component {
         <aside className="col-md-2 sidebar">
             <div class="form-group">
                 <label for="category">Category</label>
+                <div className="category-nav-box">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="category" placeholder="Search"></input>
+                    </div>
 
-                <div class="input-group mb-3">
-
-                <div class="input-group-prepend">
-                   </div>
-                <input type="text" class="form-control" id="category" placeholder="Search"></input>
+                    <nav class="navbar navbar-inverse" id="category-nav" role="navigation">
+                        <ul class="nav sidebar-nav">
+    
+                            <li>
+                                <a href="#">Agriculture & Food</a>
+                            </li>
+                            <li>
+                                <a href="#">Automotive</a>
+                            </li>
+                            <li>
+                                <a href="#">Beauty & Fashion</a>
+                            </li>
+                            <li>
+                                <a href="#">Computer</a>
+                            </li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Drinking Water</a></li>
+                                <li><a href="#">Egg Product</a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vegetable <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Coffee</a></li>
+                                        <li><a href="#">Drinking Water</a></li>
+                                        <li><a href="#">Egg Product</a></li>
+                                        <li><a href="#">Vegetable</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#">Furnitures</a>
+                            </li>
+                            <li>
+                                <a href="#">Health</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/maridlcrmn">Follow me</a>
+                            </li>
+                        </ul>
+                    </nav>               
                 </div>
+
+
+
+
+
+
+
             </div>
             <div class="form-group">
                 <label for="max_budget">Max Budget</label>
