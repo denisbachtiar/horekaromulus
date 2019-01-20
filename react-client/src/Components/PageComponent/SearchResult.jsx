@@ -102,7 +102,7 @@ class SearchResult extends Component {
                                             <div className="card-body">
                                             <div className="row">
                                                 <div className="col-md-6">
-                                                    <div class="owl-carousel owl-theme">
+                                                    <div class="owl-carousel owl-theme single-product">
                                                         <div class="item"><img className="img-responsive" src="./asset/img/indomie.png" alt="Card image cap" /></div>
                                             
                                                     </div>
