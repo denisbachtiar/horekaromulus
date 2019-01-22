@@ -1,7 +1,9 @@
 const path = require('path');
 const SRC_DIR = path.join(__dirname, '/react-client/src');
 const DIST_DIR = path.join(__dirname, '/react-client/dist');
+const Dotenv = require('dotenv-webpack');
 const webpack = require('webpack');
+
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
   output: {
@@ -41,6 +43,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
-    })
+    }),
+    new Dotenv()
   ]
 };
