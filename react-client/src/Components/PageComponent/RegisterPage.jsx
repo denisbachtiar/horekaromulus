@@ -49,11 +49,11 @@ class RegisterPage extends Component {
     const storeRegister = {...this.state.storeRegister}
     const errorFields = []
 
-    if ([null, undefined, false].indexOf(storeRegister.firstName) > -1) {
+    if ([null, undefined, false].indexOf(storeRegister.firstName) > -1 || storeRegister.firstName === '') {
       errorFields.push('firstName')
     }
 
-    if ([null, undefined, false].indexOf(storeRegister.lastName) > -1) {
+    if ([null, undefined, false].indexOf(storeRegister.lastName) > -1 || storeRegister.lastName === '') {
       errorFields.push('lastName')
     }
 
