@@ -1,12 +1,12 @@
 import * as actionTypes from '../actions'
 
 const initialState = {
-	user: null
+	countries: []
 }
 
 const reducer = (state = initialState, action) => {
 	switch(action.type) {
-		case actionTypes.SET_USER:
+		case actionTypes.SET_COUNTRIES:
 			return {
 				...state,
 				user: action.payload

@@ -3,5 +3,8 @@ export {
 } from './Auth'
 
 export {
-	getCity
+	getCountries,
+	getProvince,
+	getCity,
+	getZipCode
 } from './Common'

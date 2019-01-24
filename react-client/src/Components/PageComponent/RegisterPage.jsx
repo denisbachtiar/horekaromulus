@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import { StoreRegister as storeRegisterSchema } from '../../DefaultSchemas'
 import * as api from '../../Utils/Apis'
+import * as actions from '../../Stores/Actions'
 
 const storeRegisterDefault = {...storeRegisterSchema}
 
@@ -13,6 +15,19 @@ class RegisterPage extends Component {
       storeRegister: storeRegisterDefault,
       errorFields: []
     }
+  }
+
+  componentDidMount() {
+    api.getCountries((countries) => {
+      this.props.setCountries(countries)
+    })
+  }
+
+  static getDerivedStateFromProps(props, prevState) {
+    let _state = {...prevState}
+    let isStateDirty = false
+
+    return isStateDirty ? _state : null
   }
 
   addErrorFields(fields) {
@@ -231,4 +246,17 @@ class RegisterPage extends Component {
     )
   }
 }
-export default RegisterPage;
+
+const mapStoreStateToProps = storeState => {
+  return {
+    countries: storeState.commonReducer.countries
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setCountries: (countries) => dispatch(actions.setCountries(countries))
+  }
+}
+
+export default connect(mapStoreStateToProps, mapDispatchToProps)(RegisterPage);
