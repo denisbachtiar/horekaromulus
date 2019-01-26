@@ -13,13 +13,14 @@ class RegisterPage extends Component {
 
     this.state = {
       storeRegister: storeRegisterDefault,
-      errorFields: []
+      errorFields: [],
+      countries: []
     }
   }
 
   componentDidMount() {
     api.getCountries((countries) => {
-      this.props.setCountries(countries)
+      this.setState({ countries: countries })
     })
   }
 
@@ -249,14 +250,13 @@ class RegisterPage extends Component {
 
 const mapStoreStateToProps = storeState => {
   return {
-    countries: storeState.commonReducer.countries
+    user: storeState.authReducer.user,
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    setCountries: (countries) => dispatch(actions.setCountries(countries))
   }
 }
 
-export default connect(mapStoreStateToProps, mapDispatchToProps)(RegisterPage);
+export default connect(mapStoreStateToProps, mapDispatchToProps)(RegisterPage)

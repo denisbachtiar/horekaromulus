@@ -12,7 +12,7 @@ export const getCountries = (cb) => {
 		})
 }
 
-export const getProvince = (cb) => {
+export const getProvinces = (cb) => {
 	config.axios.get(process.env.HOREKA_API_URL + '/getProvince')
 		.then((resp) => {
 			if (cb) {
@@ -24,7 +24,7 @@ export const getProvince = (cb) => {
 		})
 }
 
-export const getCity = (cb) => {
+export const getCities = (cb) => {
 	config.axios.get(process.env.HOREKA_API_URL + '/getCity')
 		.then((resp) => {
 			if (cb) {
@@ -36,7 +36,7 @@ export const getCity = (cb) => {
 		})
 }
 
-export const getZipCode = (cb) => {
+export const getZipCodes = (cb) => {
 	config.axios.get(process.env.HOREKA_API_URL + '/getZipCode')
 		.then((resp) => {
 			if (cb) {
