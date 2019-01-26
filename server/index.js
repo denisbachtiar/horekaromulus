@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(`${__dirname}/../react-client/dist`));
 
+// dummy API horeka, for testing & development purposes
 app.get('/Horeka/rest/HorekaStoreService/getCountry', (req, res) => {
 	res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({
