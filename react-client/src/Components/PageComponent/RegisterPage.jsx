@@ -83,6 +83,12 @@ class RegisterPage extends Component {
     })
   }
 
+  renderComboCountries() {
+    return this.state.countries.map((country) => {
+      return <option value={country['country-no']}>{country['country-code']} - {country['country-name']}</option>
+    })
+  }
+
   render() {
     return (
       <div>
@@ -169,9 +175,9 @@ class RegisterPage extends Component {
                   <div className="form-group">
                     <label className="form-style3">Country</label>
                     <div className="form-box">
-                      <select id="inputState" className="form-control">
+                      <select id="inputState1" className="form-control">
                         <option selected>Choose...</option>
-                        <option>...</option>
+                        {this.renderComboCountries()}
                       </select>
                     </div>
                   </div>
@@ -180,7 +186,7 @@ class RegisterPage extends Component {
                       <div className="col-6 text-left">
                         <label className="form-style3">Province</label>
                         <div className="form-box">
-                          <select id="inputState" className="form-control">
+                          <select id="inputState2" className="form-control">
                             <option selected>Choose...</option>
                             <option>...</option>
                           </select>
@@ -189,7 +195,7 @@ class RegisterPage extends Component {
                       <div className="col-6">
                         <label className="form-style3">City</label>
                         <div className="form-box">
-                          <select id="inputState" className="form-control">
+                          <select id="inputState3" className="form-control">
                             <option selected>Choose...</option>
                             <option>...</option>
                           </select>
@@ -202,7 +208,7 @@ class RegisterPage extends Component {
                       <div className="col-6 text-left">
                         <label className="form-style3">District</label>
                         <div className="form-box">
-                          <select id="inputState" className="form-control">
+                          <select id="inputState4" className="form-control">
                             <option selected>Choose...</option>
                             <option>...</option>
                           </select>
@@ -211,7 +217,7 @@ class RegisterPage extends Component {
                       <div className="col-6">
                         <label className="form-style3">Zipcode</label>
                         <div className="form-box">
-                          <select id="inputState" className="form-control">
+                          <select id="inputState5" className="form-control">
                             <option selected>Choose...</option>
                             <option>...</option>
                           </select>

@@ -3,8 +3,10 @@ import * as config from '../../Configs'
 export const getCountries = (cb) => {
 	config.axios.get(process.env.HOREKA_API_URL + '/getCountry')
 		.then((resp) => {
-			if (cb) {
-				cb()
+			if (resp) {
+				if (cb) {
+					cb(resp.data.response.countryList['country-list'])
+				}
 			}
 		})
 		.catch((err) => {
