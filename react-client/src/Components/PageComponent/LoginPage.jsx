@@ -11,6 +11,19 @@ class LoginPage extends Component {
         <h5>Login</h5>
         <p className="login-text">Lorem ipsum dolor, sit amet consectetur  Ea aliquam, et quae ipsa. <br /> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p><form>
+        <div className="form-group">
+
+          <div className="btn-group btn-group-toggle" data-toggle="buttons">
+
+            <label className="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autoComplete="off" defaultChecked /> BUYER
+            </label>
+            <label className="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autoComplete="off" /> SELLER
+            </label>
+          </div>
+
+        </div>
           <div className="form-group">
             <label className="form-style3">Username or email</label>
             <div className="form-box">

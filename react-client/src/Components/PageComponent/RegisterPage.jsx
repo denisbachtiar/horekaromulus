@@ -99,7 +99,23 @@ class RegisterPage extends Component {
               <div className="col-5 box">
                 <h5>Register</h5>
                 <p className="login-text">Lorem ipsum dolor, sit amet consectetur  Ea aliquam, et quae ipsa. <br /> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p><form>
+                </p>
+                
+                <form>
+                <div className="form-group">
+
+                  <div className="btn-group btn-group-toggle" data-toggle="buttons">
+
+                    <label className="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autoComplete="off" defaultChecked /> BUYER
+                    </label>
+                    <label className="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autoComplete="off" /> SELLER
+                    </label>
+                  </div>
+                  
+                </div>
+
                   <div className="form-group">
                     <label className="form-style3">First Name</label>
                     <div className="form-box">

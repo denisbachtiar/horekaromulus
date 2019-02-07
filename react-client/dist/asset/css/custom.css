@@ -101,8 +101,8 @@ body{
     border-color: #48c6d0;   
 }
 .btn-secondary {
-    background-color: #ef8601;
-    border-color: #ef8601;
+     background-color: #6c757d;
+    border-color: #6c757d;
     color: #fff;
 }
 .btn-secondary:hover,
@@ -111,6 +111,14 @@ body{
  {
     background-color: #ef8601;
     border-color: #ef8601;   
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #f18600;
+    border-color: #f18600;
 }
 .bg-main
 {
@@ -215,12 +223,11 @@ input[type="search"].form-style::-webkit-input-placeholder {
     vertical-align: super;
 }
 
-.btn-group{
+.btn-register,
+.btn-login{
     border: 1px solid #48c6d0 !important;
-    border-radius: 5px;
-    margin-left : 30px;
-    height: 46px;
 }
+
 .btn-register, .btn-login {
     font-weight: 800;
     font-size: 0.8rem;
