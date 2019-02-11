@@ -9,6 +9,8 @@ import CategoryPage from './PageComponent/CategoryPage';
 import ProductPage from './PageComponent/ProductPage';
 import QuotationRequest from './PageComponent/QuotationRequest';
 import SummaryQuotation from './PageComponent/SummaryQuotation';
+import DMLPreviewPage from './PageComponent/DMLPreviewPage';
+import DMLSummaryPage from './PageComponent/DMLSummaryPage';
 import NotFound from './PageComponent/NotFound';
 import NavBar from './HeaderComponent/NavBar';
 import Footer from './Footer';
@@ -27,6 +29,10 @@ class App extends Component {
                 <Route name="product" exact path="/product" component={ProductPage} />
                 <Route name="quotation-request" exact path="/quotation-request" component={QuotationRequest} />
                 <Route name="summary-quotation" exact path="/summary-request" component={SummaryQuotation} />
+
+                <Route name="dml" exact path="/dml" component={DMLPreviewPage} />
+                <Route name="dml-summary" exact path="/dml-summary" component={DMLSummaryPage} />
+
 
                 <Route name="search" exact path="/search" component={SearchResult} />
                 <Route name="404" exact path="/404" component={NotFound} />

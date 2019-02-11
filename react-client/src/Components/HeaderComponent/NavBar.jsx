@@ -35,7 +35,7 @@ class NavBar extends Component {
             </form>
 
             <div className="navbar-nav">
-              <a className="nav-item nav-link" href="#"><i className="fa fa-list-alt"></i><span className="text-style">DAILY MARKET LIST</span></a>
+              <a className="nav-item nav-link" href="/dml"><i className="fa fa-list-alt"></i><span className="text-style">DAILY MARKET LIST</span></a>
               <a className="nav-item nav-link" href="#"><i className="fa fa-search" aria-hidden="true"></i></a>
               <a className="nav-item nav-link" href="#"><i className="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </div>

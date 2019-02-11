@@ -82,14 +82,11 @@ class QuotationRequest extends Component {
                         <small className="text-muted">*minimal order 20kg</small>
                         </td>
                         <td>
-                        <select class="form-control">
-                                    <option selected value="kg">kg</option>
-                                    <option value="g">g</option>
-                                    <option value="t">dus</option>
-                                </select>   
-                            
-                                 
-                            
+                            <select class="form-control">
+                                <option selected value="kg">kg</option>
+                                <option value="g">g</option>
+                                <option value="t">dus</option>
+                            </select>
                         </td>
                         <td>
                             <textarea id="specialnote[]" class="form-control" rows="3">
