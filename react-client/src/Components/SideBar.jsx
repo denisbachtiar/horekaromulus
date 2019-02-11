@@ -7,9 +7,12 @@ class NavBar extends Component {
             <div class="form-group">
                 <label for="category">Category</label>
                 <div className="category-nav-box">
+                <form action="/category" method="GET">
                     <div class="input-group">
                         <input type="text" class="form-control" id="category" placeholder="Search"></input>
                     </div>
+                </form>
+                   
 
                     <nav class="navbar navbar-inverse" id="category-nav" role="navigation">
                         <ul class="nav sidebar-nav">

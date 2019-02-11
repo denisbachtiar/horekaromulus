@@ -25,22 +25,33 @@ class SearchResult extends Component {
                             <div className="row no-gutters">
                                 <div className="col-md-2dot4">
                                     <div className="card card-box">
-                                    <div className="card-image">
-                                        <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
-                                        <div class="middle">
-                                            <button class="btn btn-success btn-main" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                                View
-                                            </button>
-                                        </div>                  
-                                    </div>
+                                        <input class="c-card product-list" type="checkbox" id="1" name="product-list[]" value="id"></input>
+                                        <i class="fas fa-check-circle"></i>
+
+                                        <div className="card-image">
+                                            <label for="1">
+                                                <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                                                <div class="middle">
+                                                    <button class="btn btn-success btn-main" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                        View
+                                                    </button>
+                                                </div>     
+                                            </label>
+             
+                                        </div>
                
  
                                         <div className="card-body">
-                                            <h6 className="card-title">Indomie Rasa Soto</h6>
-                                            <div className="text-muted small">Start from</div>
-                                            <span className="card-text card-price">Rp 2.300</span><span className="text-muted small">/Ons</span>
-                                            <div className="company small">CV. Citra Abadi</div>
-                                            <p className="card-text text-muted smalllocation"><i class="fas fa-map-marker-alt"></i> Jakarta</p>
+                                            <label for="1">
+                                                <h6 className="card-title">Indomie Rasa Soto</h6>
+                                                <div className="text-muted small">Start from</div>
+                                                <span className="card-text card-price">Rp 2.300</span><span className="text-muted small">/Ons</span>
+                                                <div className="company small">CV. Citra Abadi</div>
+                                                <p className="card-text text-muted smalllocation"><i class="fas fa-map-marker-alt"></i> Jakarta</p>
+                                            </label>
+                                        </div>
+                                        <div className="overlay">
+                                        
                                         </div>
                                     </div>
                                 </div>
@@ -330,20 +341,82 @@ class SearchResult extends Component {
                                 </div>
 
                             </div>
+                            <div className="box-action m-3" >
+                                <div class="d-flex justify-content-center">
+                                <form action="" method="get">
+                                    <button type="button" id="cancel_all" className="btn btn-secondary mr-2">Cancel All</button>
+                                </form>
+                                <form action="" method="get">
+                                    <button type="button" id="add_item" className="btn bg-main">Add Item</button>
+                                </form>
+                               
+                                </div>
+                            </div>
+                            
+
                             <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
                             </nav>
-                        </div>       
+                            <div className="selected-item">
+                                <div className="header-search">
+                                    <div className="text-search-info"><strong>Selected Item</strong></div>
+                
+                                </div>
+                                <div className="row no-gutters">
+                                    <div className="col-md-2dot4">
+                                        <div className="card card-box">
+                                            <input class="c-card product-list" type="checkbox" id="1" name="product-list[]" value="id"></input>
+                                            <i class="fas fa-check-circle"></i>
+
+                                            <div className="card-image">
+                                                <label for="1">
+                                                    <img className="card-img-top" src="./asset/img/indomie.png" alt="Card image cap" />
+                                                    <div class="middle">
+                                                        <button class="btn btn-success btn-main" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                            View
+                                                        </button>
+                                                    </div>     
+                                                </label>
+                
+                                            </div>
+                
+    
+                                            <div className="card-body">
+                                                <label for="1">
+                                                    <h6 className="card-title">Indomie Rasa Soto</h6>
+                                                    <div className="text-muted small">Start from</div>
+                                                    <span className="card-text card-price">Rp 2.300</span><span className="text-muted small">/Ons</span>
+                                                    <div className="company small">CV. Citra Abadi</div>
+                                                    <p className="card-text text-muted smalllocation"><i class="fas fa-map-marker-alt"></i> Jakarta</p>
+                                                </label>
+                                            </div>
+                                            <div className="overlay">
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div className="box-action" >
+                                    <div class="justify-content-left">
+                               
+                                    <form action="/quotation-request" method="get">
+                                        <button type="submit" id="send_to_cart" className="btn bg-main">Send to Cart</button>
+                                    </form>
+                                
+                                    </div>
+                                </div>
+                            </div>       
                 </div>
 
 

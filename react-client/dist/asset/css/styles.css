@@ -177,6 +177,142 @@ nav#category-nav {
 h2.title {
   font-size: 1.5rem;
 }
+/* Select Product */
+
+.c-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.c-card ~ i.fas {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+.c-card:checked ~ i.fas {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: #48c6d0;
+}
+.c-card ~ .card-body {
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  border: none;
+  border-radius: 20px;
+}
+
+.c-card ~ .card-body .form-control {
+  border: 0px;
+  border-radius: 1rem;
+}
+.c-card ~ .card-image label,
+.c-card ~ .card-body label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.c-card ~ .card-body .btn#unselect {
+  display: none;
+  background: #ced4da;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.c-card ~ .card-body .btn#select {
+  display: block;
+}
+
+.c-card ~ .card-body .card-state-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background: url("http://alvarosanchez.com/images/c-state-icons.svg") no-repeat;
+  background-position: 0 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c-card ~ .card-body:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  content: "";
+  width: 0;
+  height: 0;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.c-card ~ .card-body:after {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  content: "";
+  width: 0;
+  height: 0;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.c-card ~ .card-body:hover {
+  cursor: pointer;
+
+}
+
+.c-card ~ .card-body:hover .card-state-icon {
+  background-position: -30px 0;
+}
+
+.c-card ~ .card-body:hover:before {
+  border-top: 52px solid #6dc5dc;
+}
+
+.c-card:checked ~ .card-image,
+.c-card:checked ~ .card-body {
+  background-color: #fff;
+  opacity: 0.1;
+}
+
+.c-card:checked ~ .card-body .card-state-icon {
+  background-position: -90px 2px;
+}
+
+.c-card:checked ~ .card-body .btn#select {
+  display: none;
+}
+
+.c-card:checked ~ .card-body .btn#unselect {
+  display: block;
+}
+
+
+.c-card:checked:hover ~ .card-body {
+  cursor: pointer;
+}
+
+.c-card:checked:hover ~ .card-body .card-state-icon {
+  background-position: -60px 2px;
+}
+.selected-item {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+.box-action {
+  margin-left: 5px;
+}
+/* End Select Product */
 
 span.badge.badge-light.custom {
   padding: 12px;

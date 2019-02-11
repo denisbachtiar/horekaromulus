@@ -122,7 +122,8 @@ body{
 }
 .bg-main
 {
-    background-color: #48c6d0 !important;
+    color: #fff;
+    background-color: #48c6d0;
 }
 
 .bg-second
